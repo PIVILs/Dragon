@@ -198,7 +198,6 @@ def check_play_button(play_button, stats, target, mouse_x, mouse_y):
 def collide_bullet_target(target, bullets):
     """ Коллизия пули и мишени"""
     if pygame.sprite.spritecollide(target, bullets, True):
-        print('!!!!!!!!!!!!!!!!!!!!!!!!!!!!')
         target.target_speed_factor *= 1.4
         target.target_limit -=1
 
